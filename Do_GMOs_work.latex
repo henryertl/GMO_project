@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{How has genetic engineering shaped agriculture, and has it worked?}
+\author{The case of corn}
+\date{}
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+The application of genetic engineering to agriculture is a fascinating topic to me because it blends an incredibly controversial technology with the production of food, our most intimate and necessary resource as a biological organism. How we acquire and consume our food has always shaped our species, and so I think it's incredibly important to now investigate and scrutinize our next steps with regard to agricultural technology. Genetic engineering is criticized from all sides of the political spectrum, and yet, they are consumed by just about every human. Such paradoxes must be brought to light because it means that either 1) there is an incredible disconnect between theory and practice, or 2) the theory is misguided and in fact hindering the advancement of GE. Or, the most likely answer: the reality is complex and needs more attention, which is what I intend to do here. More specifically, I want to unpack how genetic engineering has shaped agriculture thus far to then ask the simple question: has it worked? To understand how agriculture has been shaped, this will require walking through the technological advancements of agriculture in the twentieth century, and then a quantitative analysis of crop data to further ask questions two main question related to its efficacy: 1) has it increased yields and 2) has it decreased undesirable consequences (e.g. fertilizer runoff)?
+
+Throughout this piece I will focus on corn as our model crop because 1) focusing on one crop reduces the complexity of the qualitative and quantitative questions, which is helpful just to get started, 2) it is one of the main crops farmed and so if we are to focus on one, this one is key, and 3) the USDA posts an abundance of agricultural data specifically related to corn. With this focus on corn, I will walk through the incredibly relevant chemical revolution that took place in agriculture in the twentieth century, then discuss the organic revolution that was sparked in response, and then finally explore how the biological revolution and genetic engineering emerged following these events. As we'll see, this historical context is essential for understanding how genetic engineering has been applied, which I think is an important point for assessing how it CAN be applied in the future. Throughout this entire story, I will supply some plots from USDA corn data to illustrate past events and points that I make. I have learned a great deal more about agricultural history and technological revolutions in writing this, and I hope it may serve the same benefit for you.
+
+\section{The Chemical Revolution - \\ Fertilizers, pesticides, and herbicides}
+Three huge impediments to a crop yield are 1) limiting nutrients, 2) herbivorous insects, and 3) undesirable plant growth (a.k.a weeds). By the early-mid 20th century, it was clear that the existing agricultural practices would not sufficiently feed a rapidly growing human population. A series of scientific discoveries in the field of chemistry were made just in time. The following sections will recount some of the key technological discoveries that revolutionized crop yields. Walking through this history is essential for us to understand the agricultural technological context in which genetic engineering entered the stage.
+
+\subsection{Fertilizers: increasing access to Nitrogen}
+Nitrogen is an essential element of biological life. The nucleic acids that comprise the genetic code - Adendine (A), Guanine (G), Thryosine (T), and Cytosine (C) - are all "nitrogenous bases", meaning that Nitrogen is an essential part of their chemical structure. This means that without Nitrogen a plant cannot replicate its DNA, and therefore it cannot grow and produce crops to harvest. Unfortunately, Nitrogen is often the limiting nutrient (the least abundant essential nutrient), which has stunted the agriculture for millenia.
+
+In YEAR, PERSON synthesized Nitrogen from Ammonia, unlocking an abundance of Nitrogen that could be used to supplement Nitrogen-deprived soil. This discovery was made in the context of the world wars, but also during a time when the human population was rapidly expanding and there were increasingly urgent calls for an agricultural revolution. Luckily enough, we got one -- the Chemical Revolution of Agriculture. The efficacy of nitrogen-based fertilizers on crop yields cannot be disputed. In Figure 1, you can see that in YEAR, when fertilizers were synthesized, the corn yield exploded, and continued to do so as the fertilizer usage increased. However, these yield increases were not solely due to fertilizers, they also utilized chemicals to combat unwanted insects and plants.
+
+\subsection{Pesticides: from DDT to Bt}
+Herbivorous insects have co-evolved with plants, and so it is to be expected that domesticated plants for agriculture - in which there are high densities of vegetative plants - would be negatively affected by these insects. The question that must be asked to this problem is clear: how does one kill or deter insects without having any impact on plant or human life or desirable insects?
+
+The first major attempt at solving this problem came up with DDT In YEAR, some PERCENT of corn was sprayed with DDT and The impacts on yield were revolutionary, however the negative unintended consequences soon became apparent. DDT was shown to be toxic to human health and other biological organisms, which played a big part in the subsequent Organic Movement, which we'll cover in the next section. Suffice it to say, by YEAR, DDT was banned in the US, leading to a race to find organic compounds that could replace DDT as an effective pesticide.
+
+In YEAR, NAME discovered that the toxins from a bacteria, Bt, exhibited toxic effects specifically towards insects.  Subsequent research on Bt led to large-scale synthesizing and FDA approval to use this as chemical pesticide that farmers would spray en mass, as it was organic, minimal effects on the environment, etc. Again, in reference to Figure 1, the transition to Bt as the primary insecticide in agriculture maintained the rate of increase in Corn yields, suggesting that it was a successful replacement while having minimal effects on the environment.
+
+\subsection{Herbicides: Refining selective chemicals}
+The final trick to increasing crop yields that we'll cover here is to eradicate undesirable plants that consume precious nutrients that farmers' would prefer go to the crop being grown. This problem is a bit harder to solve than the insecticide because now you need to find a way to selectively kill all plants, except your own. How does one go about that sort of selectivity? A common way for some time, and still today, is 2-4D. The high selectivity of 2-4D, in addition to it's lower environmental hazards compared with subsequent discoveries, has led to it still being used commonly today.
+
+In YEAR, Monsanto released RoundUp, which is chemically glycophate, a chemical that exhibits non-selectivity, but is highly effective against a broad range of plants. Thus, for cases where selectivity was not necessary, Glycophate was the chemical of choice. In cases where a farmer could afford to selectively apply the herbicide, this was a very effective way to kill unwanted plants.
+
+Of course, if you're reading this, you maybe have some idea of the controversies surrounding Monsanto's RoundUp, which, again, I wil cover in the next section.
+
+\section{The Organic Revolution - \\
+Avoiding unintended consequences}
+There was no shortage of positivity surrounding the Chemical Revolution that "saved" Agriculture. However,
+Rachel Carson's Silent Spring ignited an Organic Revolution focused towards environmental awareness and a repulsion towards these chemicals being increasingly used in agriculture. Indeed, Silent Spring documented X, Y, and Z, and the EPA did this and that. The Organic Revolution exposed the unintended consequences of the Chemical Revolution and basically said: this is not worth the increased yields.
+
+
+
+This message by the Organic Revolution is essential because it applies similarly to the Biological Revolution that has already consumed agriculture. Namely, do the benefits of GMOs outweigh the risk potential of unintended consequences? Keeping in mind the values established in the Green Revolution, are we now better off with GMOs than we were in the 20th century? What are some of the unintended consequences of GMOs and what risk do they bring? Now it is time to explore the explosion of GMOs in the Twentieth century.
+
+- nuanced questions to pose in this section:
+    - Does GE maintain increased yields while absolving us from the environmental risks? Does GE exacerbate these risks?
+    - Does GE create new, different environmental risks?
+    - Can GE allow for increased yields for otherwise organic farming practices?
+
+- nuanced content:
+ - Silent Spring caused us to realize there were consequences to this excessive amount of fertilizer and pesticide. Sure, they were allowing for great increases, but this was all the more reason for it to be well-managed. Furthermore, it sparked an exploration of organic farming practices that will now be important to implement in the future.
+
+\section{The Biological Revolution}
+The ability to alter genetic material was revolutionary because we now could read AND write (although incompletely) in the genetic code. In the case of corn, two types of genetic modifications has ruled GE corn: Bt corn and Round Up.
+
+Figure 2 shows the annual increase of 1) round up and 2) Bt, which has brought us to today in which ~95 percent of our corn contains both modifications. Thus, the biological revolution replaced and enhanced the previous chemical revolution as a solution of the biggest problems to farmers.
+
+In this section, I will 1) qualitatively review the use of both round up and Bt GE tech to show how genetic engineering has been used, thus far in corn, to essentially refine the previous solutions to the same problems, and then 2) quantitatively review the effects of GE on corn yields in the U.S. to show that genetic engineering has had negligible impacts on agricultural "progress".
+
+\subsection{Genetic engineering in Corn}
+Almost 98percent of corn is now genetically modified. And there are really only two modifications that are made on this scale, both of which make complete sense given the previous technological advancements. And now both will be covered.
+
+\subsubsection{Bt corn - a pesticide replacement}
+The advent of genetic engineering created a solution to this problem. If we can just get the plants to produce the compounds themselves via genetic engineering, then that would lessen the runoff. Furthermore, this would erase the need for farmers to spend non-trivial time and energy spraying their crops with the pesticides. Indeed, in the past twenty years, 95 percent of our corn is engineering to express a foreign bacterial gene that encodes this Bt toxin.
+
+\subsubsection{Round up corn - a super selective herbicide}
+Has the use of Round up helped to resolve some of the unintended consequences of the chemical revolution? No- largely because this was not the intention of Round up. On the contrary, round up created a technology that enhanced rather than replaced the chemical solutions to weeds. In the past, selective herbicides used by farmers were limited in their selectivity, but now GMOs offered highly customized selectivity. As a result, more herbicides seem to be used on Corn.
+
+IS glycophate bad for the environment?
+
+\subsection{How has genetic engineering shaped corn agriculture, and has it worked?}
+We know has a sufficient understanding of how agriculture has evolved over the past century and the state of agriculture upon which genetic engineering has been applied. So, from that state of agriculture, has it been shaped and has it been effective at increasing yields and reducing negative unintended consequences? I will state now that paragraphs addressing these questions will be incredibly unsatisfying in that they are not simple yes/no's, nor are they resounding calls for or against genetic engineering. In fact, you will probably finish reading this piece more confused on what to think of GMOs than when you began; however, I think that has been the point of this entire piece.
+
+\subsubsection{Has genetic engineering increased corn yields?)}
+
+In the case of corn, genetic engineering hoped to solve some of the issues resulting from chemical pesticides WHILE maintaining the high yields brought about by the chemical revolution. It is important to note that, despite what one may think from reading anti-GE corn literature, the primary intended consequence of GE corn was NOT to revolutionize corn yields.
+
+Now that we've stated the intended consequences of GMO corn, let's look at whether they've worked. In Figure 1, I have plotted the annual corn yields dating back to 1866 and color-coded the points based on the percentage of corn that is genetically modified. Two things immediately jump out from this plot: 1) the annual corn yield has progressively increased at a steady rate since the dawn the of the chemical revolution and 2) the advent of GMOs had no effect on the "rate of progress". In other words, pretend you didn't have some idea of when genetic engineering was discovered, could you identify the year when GE corn became wide-spread? No, because there is no point after 1950 at which the rate of progress changes.
+
+Returning to the intended consequences, it seems that one part was fulfilled: the rate of progress was undisturbed. Did the GMOs also solve the spilloff issue? Table 2 is from the most recent EPA report, in which the soil content was measured for contamination. The results were conclusively non-significant across the board. Thus, overall, it seems the past twenty years have shown that the intended consequences of GMOs have been fulfilled. The rate of progress has been maintained while freeing up more time for farmers and eliminating chemical spillover.
+
+\subsubsection{Has genetic engineering mitigated the unintended consequences of previous chemical technologies?)}
+
+\subsubsection{A note on what I've left out)}
+
+\section{Conclusions}
+
+
+
+\end{document}
+
+
+\section{The Case of Corn}
+Since Europeans encountered corn used by Native Americans hundreds of years ago, Corn is now an incredibly common crop used around the world. As such, the corn crop has lived through many agricultural revolutions and has taken many forms as a result.
+
+- Edit this to now also include narrative on 1) corn a major staple and 2) the need for more food at the turn of the century.
+
+Corn is a particularly alluring crop to analyze when trying to understand the role of genetic engineering for the following reasons: 1) the U.S. has been planting corn for centuries and it is present in many different foods, 2) the USDA has been recording important metrics, such as yield, since 1866, 3) corn was one of the first crops to be genetically engineered and widely produced, and 4) genetically engineered corn now comprises 95 percent of US grown corn. While the large data sets that are publicly available provide interesting insights, the case of corn also illustrates how the complexities of industrial capitalism, farmers' interests, and consumer interests all make it more difficult to determine what is right. I will now walk through the history of corn - as it relates to current genetic engineering - to help understand why we are where we are today.
