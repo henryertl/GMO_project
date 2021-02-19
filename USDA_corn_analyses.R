@@ -8,33 +8,6 @@
 library(ggplot2)
 library(tidyverse)
 
-# read in spreadsheet
-df <- read.csv("/Users/henryertl/Documents/General/US_corn_yields_GMO_annual.csv", header = T)
-colnames(df) <- c("Year", "Data_type", "Crop", "Yield_bush_acre", "GE_planted_insect", "GE_planted_herb", "GE_planted_stacked","GE_planted_total")
-
-# subset year
-df_1865 <- subset(df, df$Year > 1865)
-# replace NAs with 0s
-df_1865[is.na(df_1865)] <- 0
-
-# plot
-ggplot(data = df_1865, aes(x=Year)) +
-  geom_point(aes(y=Yield_bush_acre, color=GE_planted_total)) +
-  geom_smooth(aes(y=Yield_bush_acre),method="loess", color = "black") +
-  scale_color_gradient(low="blue", high="red", "% GMO Corn planted") +
-  xlab("Year") +
-  ylab("Yield (Bushels/Acre)")
-
-
-
-
-#################
-
-
-
-
-
-#########################
 theme_main <- function() {
   theme_bw() +
     theme(
@@ -49,18 +22,61 @@ theme_main <- function() {
     )
 }
 
-twobytwo <- matrix(ncol = 3, nrow = 4) %>% as.data.frame()
-twobytwo[,1] <- c(rep("Conserved Grh motif", 2), rep("Variable Grh motif", 2))
-twobytwo[,2] <- c(52,90,48,10)
-twobytwo[,3] <- c("Diverged accessibility","Conserved accessibility","Diverged accessibility","Conserved accessibility")
-colnames(twobytwo) <- c("Motif_Type", "Percentage", "Region_status")
 
-A <- ggplot(data = twobytwo, aes(x=Region_status, y=Percentage, fill=Motif_Type)) +
-  geom_bar(position="stack", stat="identity") +
-  xlab("") +
-  theme_main()
+# read in spreadsheet
+df <- read.csv("/Users/henryertl/Documents/Devs/GMO_project/Data_tables/US_corn_yields_GMO_annual.csv", header = T)
+colnames(df) <- c("Year", "Data_type", "Crop", "Yield_bush_acre", "GE_planted_insect", "GE_planted_herb", "GE_planted_stacked","GE_planted_total")
 
-ggsave(A,file="/Users/henryertl/Documents/Wittkopp_lab/AS_ATACseq/Figures/percent_variable_grh.pdf", width = 15, height = 15)
+# subset year
+df_1865 <- df[df$Year > 1865,]
+# replace NAs with 0s
+df_1865[is.na(df_1865)] <- 0
+
+# plot
+ggplot(df_1865, aes(x=Year)) +
+  geom_point(aes(y=Yield_bush_acre)) +
+  geom_smooth(aes(y=Yield_bush_acre),method="loess", color = "black") +
+  xlab("Year") +
+  ylab("Yield (Bushels/Acre)")
+
+
+B <- df_1865[df_1865$Year > 1965,] %>%
+ggplot(aes(x=Year)) +
+  geom_point(aes(y=Yield_bush_acre, color=GE_planted_total)) +
+  geom_smooth(aes(y=Yield_bush_acre),method="lm", color = "black") +
+  #scale_color_gradient(low="blue", high="red", "% GMO Corn planted") +
+  xlab("Year") +
+  ylab("Yield (Bushels/Acre)")
 
 
 
+df_1865[df_1865$Year > 1998,] %>%
+ggplot() +
+geom_line(aes(x=Year,y=GE_planted_insect), color = "blue") +
+geom_line(aes(x=Year,y=GE_planted_herb), color = "red") +
+geom_line(aes(x=Year, y=GE_planted_stacked), color = "green") +
+geom_point(aes(x=Year,y=GE_planted_insect), color = "blue") +
+geom_point(aes(x=Year,y=GE_planted_herb), color = "red") +
+geom_point(aes(x=Year, y=GE_planted_stacked), color = "green")
+
+
+
+
+#################
+
+df <- read.delim("/Users/henryertl/Documents/Devs/GMO_project/Data_tables/Relevant_combined_corn.txt", header = T)
+head(df)
+
+
+
+# plot
+ggplot(df) +
+  geom_point(aes(x=Year, y=N.fertilizer.applied), color = "red") +
+  geom_line(aes(x=Year, y=N.fertilizer.applied), color = "red") +
+  geom_point(aes(x=Year, y=YIELD..BU...ACRE.), color = "blue") +
+  geom_line(aes(x=Year, y=YIELD..BU...ACRE.), color = "blue")
+
+
+  geom_smooth(aes(y=Yield_bush_acre),method="loess", color = "black") +
+  xlab("Year") +
+  ylab("Yield (Bushels/Acre)")
