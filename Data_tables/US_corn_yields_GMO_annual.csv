@@ -1,4 +1,4 @@
-Year,State,Commodity,"YIELD, BU / ACRE ",% GE Bt insecticide only,% GE herbicide only,% stacked,total GMO planted
+Year,State,Commodity,"YIELD_BU_ACRE,perc_GE_Bt_insecticide_only,perc_GE_herbicide_only,perc_stacked,total_GMO_planted
 2020,US TOTAL,CORN,178.5,3,10,79,92
 2019,US TOTAL,CORN,167.4,3,9,80,92
 2018,US TOTAL,CORN,176.4,2,10,80,92

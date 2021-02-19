@@ -65,16 +65,17 @@ geom_point(aes(x=Year, y=GE_planted_stacked), color = "green")
 #################
 
 df <- read.delim("/Users/henryertl/Documents/Devs/GMO_project/Data_tables/Relevant_combined_corn.txt", header = T)
-head(df)
-
-
+df$organic_acres_planted <- df$organic_acres_planted %>% as.numeric()
 
 # plot
-ggplot(df) +
-  geom_point(aes(x=Year, y=N.fertilizer.applied), color = "red") +
-  geom_line(aes(x=Year, y=N.fertilizer.applied), color = "red") +
-  geom_point(aes(x=Year, y=YIELD..BU...ACRE.), color = "blue") +
-  geom_line(aes(x=Year, y=YIELD..BU...ACRE.), color = "blue")
+A <- df[df$Year > 1960,] %>%
+ggplot() +
+  geom_point(aes(x=Year, y=N_fertilizer_applied), color = "red") +
+  geom_smooth(aes(x=Year, y=N_fertilizer_applied), color = "red") +
+  geom_point(aes(x=Year, y=YIELD_BU_ACRE), color = "blue") +
+  geom_smooth(aes(x=Year, y=YIELD_BU_ACRE), color = "blue") +
+  geom_point(aes(x=Year, y=organic_acres_planted), color = "green") +
+  geom_smooth(aes(x=Year, y=organic_acres_planted), color = "green")
 
 
   geom_smooth(aes(y=Yield_bush_acre),method="loess", color = "black") +
