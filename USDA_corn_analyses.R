@@ -81,25 +81,31 @@ ggplot(aes(x=Year)) +
 geom_point(aes(y=herbicides_used_perc_of_total)) +
 geom_smooth(aes(y=herbicides_used_perc_of_total), method="loess", color="black") +
 theme_main() +
-ylab("Herbicide used (% of total acres planted)")
+ylab("Herbicide used (% of total acres planted)") +
+theme(plot.title = element_text(hjust = 0.5)) +
+geom_vline(xintercept=1997, linetype = "dashed", alpha = 0.5) +
+geom_vline(xintercept=2007, linetype = "dashed", alpha = 0.5) +
+ggtitle("Herbicide usage on corn crops")
 
-D <- df[df$Year > 1995 & df$Year < 2010,] %>%
+D <- df[df$Year > 1995 & df$Year < 2008,] %>%
 ggplot(aes(x=Year)) +
-geom_point(aes(y=lb_Glyph_Acre)) +
-geom_smooth(aes(y=lb_Glyph_Acre), method="loess", color="black")  +
-geom_point(aes(y=lb_other_herb_acre), color = "red") +
-geom_smooth(aes(y=lb_other_herb_acre), method="loess", color="red") +
+geom_point(aes(y=lb_Glyph_Acre), color="#663399") +
+geom_smooth(aes(y=lb_Glyph_Acre), method="loess", color="#663399")  +
+geom_point(aes(y=lb_other_herb_acre), color = "#009966") +
+geom_smooth(aes(y=lb_other_herb_acre), method="loess", color="#009966") +
 theme_main() +
-scale_y_continuous(name = "Glycophate used (lb)",
-    sec.axis = sec_axis( trans=~., name="Other herbicice used (not glycophate))")) +
-theme(
-    axis.title.y = element_text(color = "black", size=13),
-    axis.title.y.right = element_text(color = "red", size=13),
-    axis.text.y.right = element_text(size = 15, color = "red")
-  )
+scale_x_continuous(breaks = c(1998, 2002, 2006)) +
+scale_y_continuous(name = "Glyphosate used (lb)",
+    sec.axis = sec_axis( trans=~., name="Other herbicide used (lb)")) +
+theme(axis.title.y = element_text(color = "#663399", size=14, vjust=1.5),
+    axis.text.y = element_text(size = 13, color = "#663399"),
+    axis.title.y.right = element_text(color = "#009966", size=14, vjust=1.5),
+    axis.text.y.right = element_text(size = 13, color = "#009966"),
+    plot.title = element_text(hjust = 0.5)) +
+ggtitle("Glyphosate vs other herbicides on corn crops")
 
 E <- plot_grid(C, D)
-
+ggsave(E, file = "./GMO_project/Figures/Herbicide_corn_usage.pdf", width = 13, height = 7)
 
 # organic
 G <- df[df$Year > 2004 & df$Year < 2012,] %>%
