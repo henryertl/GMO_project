@@ -71,7 +71,7 @@ theme(axis.title.y = element_text(color = "dodgerblue4", size=14, vjust=1.5),
     axis.title.y.right = element_text(color = "firebrick4", size=14, vjust=1.5),
     axis.text.y.right = element_text(size = 13, color = "firebrick4"),
     plot.title = element_text(hjust = 0.5)) +
-ggtitle("Chemical vs GMO insecticide usage")
+ggtitle("Chemical vs GMO insecticide usage on USA corn")
   ggsave(B, file = "./GMO_project/Figures/Chemical_GMO_pesticide_usage.pdf")
 
 
