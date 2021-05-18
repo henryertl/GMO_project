@@ -2,7 +2,6 @@
 # https://quickstats.nass.usda.gov : census > crops > field crops > corn > corn,grain yield
 # https://www.ers.usda.gov/data-products/adoption-of-genetically-engineered-crops-in-the-us/ > download dataset
 ## combined these two onto one spreadsheet and calculated sum of different types in excel ##
-# goal: plot to visualize
 
 # load libraries
 library(ggplot2)
